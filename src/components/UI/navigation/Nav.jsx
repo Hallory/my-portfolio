@@ -10,16 +10,22 @@ const Nav = ({ isOpen }) => {
   
   return (
     <AnimatePresence >
+      
       {isOpen && (
-        
+        <>
+        <motion.div 
+          initial = {{scaleY:0, opacity:0}}
+          animate={{scaleY:1, opacity:1}}
+          exit={{scaleY:1, opacity:1}}
+          transition={{duration:1, ease:[0.22,1,0.36,1]}}
+        />
     <motion.nav
       initial={{ y: 0, height: 0, zIndex: -1000 }}
       animate={{ y: 0, height: "100vh", zIndex: 1000 }}
-      exit={{ y: "-100vh", height: 0, opacity: 0}}
+      
       transition={{ duration: 0.75 }}
       className="h-screen w-screen fixed flex flex-col justify-center items-center bg-slate-300"
     >
-      
       <div className="w-full h-full lg:pl-[150px] xs:pl-[50px] pt-[55px] pr-[80px] pb-[65px]">
         <div className="flex  items-center relative w-full h-[30px] mb-[40px] mt-[40px]">
           <motion.div
@@ -95,7 +101,7 @@ const Nav = ({ isOpen }) => {
           </motion.div>
         </div>
       </div>
-    </motion.nav>
+    </motion.nav></>
       )}
     </AnimatePresence>
   );
