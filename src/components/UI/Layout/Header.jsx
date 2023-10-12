@@ -16,7 +16,7 @@ const Header = () => {
                 <Nav isOpen={isOpen}/>
             )}
             <div className='relative z-[10000] align-middle flex  justify-between max-w-[200px]  lg:left-[10%] xs:left-[10px]'>
-            <span className='flex relative flex-col cursor-pointer text-2xl ' onClick={toggle}>
+            <button className='flex relative flex-col cursor-pointer text-2xl ' onClick={toggle}>
                 <motion.span
                 initial={{opacity:0, y:-10}}     
                 animate={isOpen ? {opacity:1, y:30} : {opacity:0, y:-20}}
@@ -29,10 +29,7 @@ const Header = () => {
                 transition={{duration:0.1}}
 
                 >Menu</motion.span>
-            </span>
-            <div className='fixed lg:top-[65px] lg:right-[50px] xs:top-[30px] xs:right-[20px] w-[100px]'>
-                Contact Me!
-            </div>
+            </button>
             </div>
         </header>
     );

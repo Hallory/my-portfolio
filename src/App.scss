@@ -6,7 +6,9 @@
 }
 html, body{
     box-sizing: content-box;
-    overflow: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 html:before {
     left: 0;
@@ -30,6 +32,8 @@ html:after {
 }
 
 body{
+    font-family: 'Press Start 2P', cursive; 
+
     box-sizing: border-box;
     
 }
@@ -50,39 +54,29 @@ body:after, body:before {
 *, :after, :before {
     box-sizing: border-box;
 }
-// @media(max-width: 512px) {
-//     html:after,html:before {
-//         width:10px
-//     }
 
-//     body {
-//         padding: 10px
-//     }
 
-//     body:after,body:before {
-//         height: 10px
-//     }
-// }
-
-.page-wrapper {
-    @apply w-full relative overflow-hidden p-[20px] box-border;
+ .page-wrapper {
+     @apply w-full relative p-[20px] box-border;
     min-height: calc(100vh - 20px);
 }
-.page{
+ .page{
   @apply max-w-[1200px] mx-auto relative pt-[100px];
 }
-.page-header{
-    @apply lg:min-h-screen mx-auto md:min-h-[600px] ;
-}
+ .page-header{
+     @apply min-h-screen mx-auto w-full; 
+ }
 .nav-span{
-    @apply  max-w-[300px];
+    @apply  max-w-[300px] ;
     font-size: clamp(36px, 5vw, 65px);
-    font-family: 'Poppins', sans-serif;
 }
 
-/* .slide-in{
-     @apply fixed top-0 left-0 right-0 bottom-0 h-screen w-full bg-black origin-bottom;
- }
- .slide-out{
-     @apply fixed top-0 left-0 right-0 bottom-0 h-screen w-full bg-black origin-top;
- } */
+ .text-with-outline {
+    color: black;
+    transition: text-shadow 0.3s ease;
+  }
+  
+  .text-with-outline:hover {
+    color:#fff;
+    text-shadow: 0 0 10px black;
+  }

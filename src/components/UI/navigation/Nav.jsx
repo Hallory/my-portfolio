@@ -22,7 +22,7 @@ const Nav = ({ isOpen }) => {
     <motion.nav
       initial={{ y: 0, height: 0, zIndex: -1000 }}
       animate={{ y: 0, height: "100vh", zIndex: 1000 }}
-      
+        
       transition={{ duration: 0.75 }}
       className="h-screen w-screen fixed flex flex-col justify-center items-center bg-slate-300"
     >
@@ -35,7 +35,7 @@ const Nav = ({ isOpen }) => {
               x: 0,
               width: "250px",
               height: "3px",
-              backgroundColor: "red",
+              backgroundColor: "white",
               type: "spring",
             }}
             transition={{ delay: 1.5, duration: 1 }}
@@ -60,11 +60,12 @@ const Nav = ({ isOpen }) => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 1 }}
-            className=""
+            className="flex items-center justify-between max-w-[40%]"
           >
             <motion.span className="nav-span">
-              <Link to="/">Home</Link>
+              <Link className="text-with-outline" to="/">Home</Link>
             </motion.span>
+            <p>Back to home page</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -74,7 +75,8 @@ const Nav = ({ isOpen }) => {
             
           >
             <motion.span className="nav-span">
-              <Link to="/aboutme">
+              <Link to="/aboutme"
+              className="text-with-outline">
                 About Me
               </Link>
             </motion.span>
@@ -86,7 +88,7 @@ const Nav = ({ isOpen }) => {
             className=""
           >
             <motion.span className="nav-span">
-              <Link to="/work">Work</Link>
+              <Link className="text-with-outline" to="/work">Work</Link>
             </motion.span>
           </motion.div>
           <motion.div
@@ -96,7 +98,7 @@ const Nav = ({ isOpen }) => {
             className=""
           >
             <motion.span className="nav-span">
-              <Link to="/work">Writing</Link>
+              <Link className="text-with-outline" to="/work">Writing</Link>
             </motion.span>
           </motion.div>
         </div>

@@ -5,6 +5,8 @@ import AboutMe from './components/pages/AboutMe';
 import Work from './components/pages/Work';
 import Nav from './components/UI/navigation/Nav';
 import { AnimatePresence } from 'framer-motion';
+import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 function App() {
 
@@ -12,11 +14,12 @@ function App() {
 
   return (
     <div className="page-wrapper">
-      <Routes location={location} key={location.pathname}>
+        <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />}/>
         <Route path="/aboutme" element={<AboutMe />}/>
         <Route path="/work" element={<Work />}/>
       </Routes>
+      
     </div>
   );
 }

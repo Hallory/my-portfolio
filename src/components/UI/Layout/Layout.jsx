@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
           initial={{ height: "100vh", scaleY: 100, top: -30, opacity: 1 }}
           animate={{ height: 0, opacity: 1, scaleY: 0 }}
           exit={{ height: 0, opacity: 1, scaleY: 0, zIndex: 0 }}
-          transition={{ duration: 0.75 }}
+          transition={{ duration: 1.25 }}
           className={`h-screen w-screen fixed z-[20000] flex flex-col justify-center items-center ${
             location.pathname === "/work" ? "bg-amber-200" : "bg-slate-300"
           }`}
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ delay: 1.25, duration: 1 }}
+          transition={{ delay: 1.5, duration: 1 }}
           className="pt-[100px] bg-slate-200"
           
         >

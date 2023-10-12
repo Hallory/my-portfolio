@@ -20,6 +20,10 @@ screens: {
         '2xl': '1536px',  
       },
     },
+    fontFamily: { 
+      primary: ['"Roboto"', 'sans-serif'], 
+      secondary: ['"Roboto Mono"', 'monospace'], 
+    }
   },
   plugins: [],
 }
