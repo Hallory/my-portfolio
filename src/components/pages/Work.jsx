@@ -1,17 +1,21 @@
 import React from 'react';
 import Layout from '../UI/Layout/Layout';
-import transition from '../motion/transition';
-const Work = () => {
-    return (
-        <Layout>
-            <div className='conainer page'>
-            <div className='page-header'>
+import AnimatedImage from '../pages/animated/AnimatedImage'
 
-            <h1>Work</h1>
-</div>
-            </div>
-        </Layout>
-    );
+const Work = () => {
+  return (
+    <Layout>
+      <div className='page'>
+
+      <div className='container-page'>
+        <div className='page-header'>
+        <AnimatedImage/>
+
+        </div>
+      </div>
+      </div>
+    </Layout>
+  );
 };
 
 export default Work;
