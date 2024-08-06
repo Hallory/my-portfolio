@@ -67,7 +67,7 @@ body:after, body:before {
      @apply min-h-screen mx-auto w-full; 
  }
 .nav-span{
-    @apply  max-w-[300px] ;
+    @apply  max-w-[600px] ;
     font-size: clamp(36px, 5vw, 65px);
 }
 
@@ -80,3 +80,10 @@ body:after, body:before {
     color:#fff;
     text-shadow: 0 0 10px black;
   }
+
+  .contact-input{
+    @apply w-full max-w-[300px] p-[10px] outline-none text-black bg-transparent ;
+    
+  }
+  
+  

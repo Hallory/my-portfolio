@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = { 
+  darkMode: true,
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -23,7 +24,7 @@ screens: {
     fontFamily: { 
       primary: ['"Roboto"', 'sans-serif'], 
       secondary: ['"Roboto Mono"', 'monospace'], 
-    }
+    },
   },
   plugins: [],
 }

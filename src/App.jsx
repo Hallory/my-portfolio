@@ -3,11 +3,7 @@ import './App.scss';
 import Home from './components/pages/Home';
 import AboutMe from './components/pages/AboutMe';
 import Work from './components/pages/Work';
-import Nav from './components/UI/navigation/Nav';
-import { AnimatePresence } from 'framer-motion';
-import { ParallaxProvider } from 'react-scroll-parallax';
-
-
+import WriteMe from './components/pages/WriteMe';
 function App() {
 
   const location = useLocation();
@@ -18,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/aboutme" element={<AboutMe />}/>
         <Route path="/work" element={<Work />}/>
+        <Route path="/writeme" element={<WriteMe />} />
       </Routes>
       
     </div>
