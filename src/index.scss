@@ -29,7 +29,7 @@ body {
   @apply bg-slate-200;
   background-image: radial-gradient(rgb(136, 136, 136) 1px, transparent 0);
   background-size: 40px 50px;
-  background-position: -100px 0; /* Начальная позиция за пределами видимой области */
+  background-position: -100px 0; 
   animation: waveGrid 10s linear infinite;
 }
 

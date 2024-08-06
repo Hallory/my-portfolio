@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../UI/Layout/Layout";
 import { motion } from "framer-motion";
-import AnimatedPage from "./AnimatedPage";
 
 const AboutMe = () => {
   return (

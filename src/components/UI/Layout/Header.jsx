@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import Nav from '../navigation/Nav';
-import {motion, useAnimate} from 'framer-motion';
+import {motion} from 'framer-motion';
 const Header = () => {
 
     const [isOpen,setIsOpen] = useState(false);

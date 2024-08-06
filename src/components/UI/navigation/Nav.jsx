@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTelegramPlane } from "react-icons/fa";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { TelegramShareButton } from "react-share";
 
 const Nav = ({ isOpen }) => {
 

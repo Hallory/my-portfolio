@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import Home from './components/pages/Home';
 import AboutMe from './components/pages/AboutMe';
 import Work from './components/pages/Work';

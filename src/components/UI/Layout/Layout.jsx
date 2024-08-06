@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Nav from "../navigation/Nav";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 const Layout = ({ children }) => {
